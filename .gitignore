@@ -39,4 +39,4 @@ lerna-debug.log*
 .env.*
 
 # configs
-src/config/*
+# src/config/*

@@ -11,6 +11,13 @@ export class UserService {
   ) {}
 
   async signIn({ id, password }: SignInUserDTO) {
-    return this.userRepository.signIn({ id, password });
+    return {
+      ok: true,
+      error: null,
+      user: {
+        id,
+        password,
+      },
+    };
   }
 }
